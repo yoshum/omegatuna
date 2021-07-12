@@ -1,10 +1,12 @@
-# OmegaTuna
+# OmegaTuna: A thin wrapper of OmegaConf to integrate Optuna
 
-A thin wrapper of OmegaConf to integrate Optuna
+_OmegaTuna_ facilitates management of experiments by offering a consice way of defining search spaces for [Optuna](https://optuna.org/). OmegaTuna allows us to specify hyperparameters and their search spaces _in one place_ in, e.g., a YAML file (or anywhere [OmegaConf](https://github.com/omry/omegaconf) can load from). [Hydra's Optuna Sweeper plugin](https://hydra.cc/docs/next/plugins/optuna_sweeper/) offers similar functionality, with which, however, hyperparameters and their search spaces are separately specified.
+
+This library builds upon [OmegaConf](https://github.com/omry/omegaconf) and its interpolation system. Please refer to [OmegaConf documentation](https://omegaconf.readthedocs.io/en/latest/usage.html) for its usage.
 
 ## Features
 
-- Embeds suggested values into a created config
+- Concise notation of hyperparameter search spaces
 - Works as a drop-in replacement for OmegaConf
 
 ## Basic usage
