@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "omegatuna"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+omegaconf = "^2.1.0"
+optuna = "^2.8.0"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+mypy = "^0.910"
+flake8 = "^3.9.2"
+isort = "^5.9.2"
+pytest = "^6.2.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
